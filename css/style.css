@@ -1,0 +1,381 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+  padding: 40px 0;
+  text-align: center;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Seção Sobre */
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #8e2de2;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Seção Eventos */
+.events {
+  padding: 40px 0;
+}
+
+.events h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #8e2de2;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.event-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+.event-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 20px;
+}
+
+.event-date {
+  color: #8e2de2;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.lineup {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.lineup span {
+  display: inline-block;
+  background-color: rgba(142, 45, 226, 0.2);
+  padding: 5px 10px;
+  margin: 3px 3px 3px 0;
+  border-radius: 15px;
+}
+
+.ticket-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #8e2de2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.ticket-btn:hover {
+  background-color: #4a00e0;
+}
+
+.show-more {
+  display: block;
+  margin: 40px auto;
+  padding: 15px 30px;
+  background-color: #8e2de2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-more:hover {
+  background-color: #4a00e0;
+}
+
+/* Seção Social */
+.social {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.social h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #8e2de2;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 25px;
+  background-color: #8e2de2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #4a00e0;
+}
+
+.social-btn i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Rodapé */
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #121212;
+  border-top: 1px solid #333;
+}
+
+/* Seção para eventos escondidos */
+.hidden-events {
+  display: none;
+}
+
+.hidden-events.show {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: #1e1e1e;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+
+.modal-overlay.active .modal {
+  transform: scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 40%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.modal-content {
+  width: 60%;
+  padding-left: 25px;
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #8e2de2;
+}
+
+.modal-date {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #4a00e0;
+  font-weight: bold;
+}
+
+.modal-description {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.modal-lineup {
+  margin-bottom: 20px;
+}
+
+.modal-lineup h4 {
+  margin-bottom: 10px;
+  color: #8e2de2;
+}
+
+.modal-lineup-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.modal-venue {
+  margin-bottom: 20px;
+}
+
+.modal-venue h4 {
+  margin-bottom: 10px;
+  color: #8e2de2;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modal-btn {
+  padding: 10px 20px;
+  background-color: #8e2de2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.modal-btn:hover {
+  background-color: #4a00e0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+  
+  .about h2, .events h2, .social h2 {
+      font-size: 1.8rem;
+  }
+  
+  .events-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .social-buttons {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .modal {
+      flex-direction: column;
+      padding: 20px;
+  }
+  
+  .modal-image {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .modal-content {
+      width: 100%;
+      padding-left: 0;
+  }
+  
+  .modal-buttons {
+      flex-direction: column;
+  }
+}
