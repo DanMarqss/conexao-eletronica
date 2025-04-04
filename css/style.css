@@ -63,7 +63,7 @@ header {
 /* Conteúdo principal dentro do header */
 .header-content {
   position: relative;
-  z-index: 2;
+  z-index: 5; /* texto fica acima do alien (logo) */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +94,7 @@ h1 {
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 3;
+  z-index: 3; /* abaixo do texto, se houver sobreposição */
 }
 
 .logo img {
@@ -415,13 +415,23 @@ footer {
 /* Responsivo para telas menores que 768px */
 @media (max-width: 768px) {
 
+  /* Diminui a altura mínima do cabeçalho */
+  header {
+    min-height: 220px;
+  }
+
+  /* Diminui o tamanho do alien no celular */
+  .logo img {
+    width: 40px;
+  }
+
   /* Reduz título e subtítulo no header para caber melhor na tela */
   .header-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .header-content p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .about h2,
@@ -474,7 +484,7 @@ footer {
     text-align: center;
   }
 
-  /* Botão "Mostrar Mais" */
+  /* Botão "Mostrar Mais" menor e centralizado também */
   .show-more {
     font-size: 1rem;
     padding: 10px 15px;
