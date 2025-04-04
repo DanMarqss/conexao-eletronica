@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
           lineup: ["DJ Keoma", "Pedro Mao"],
           venue: "Belle Epoque Restaurant & Cocktail Bar",
           venueDescription: "Localizado no coração de Manaus, o Belle Epoque Restaurant & Cocktail Bar oferece uma experiência única, combinando alta gastronomia, drinks exclusivos e música eletrônica de qualidade em um ambiente elegante.",
-          venueLink: "#marina-david",
+          venueLink: "https://www.instagram.com/conexaoeletronicamanaus",
           ticketLink: "#tickets-techno"
       },
       {
@@ -34,42 +34,42 @@ document.addEventListener('DOMContentLoaded', function() {
           lineup: ["All in One", "Trampsta"],
           venue: "Chácara Dama",
           venueDescription: "Chácara Dama é um espaço amplo e versátil em Manaus, ideal para eventos ao ar livre. Cercada por natureza exuberante, oferece uma atmosfera única para festas e festivais. Com estrutura completa, incluindo áreas cobertas, estacionamento e espaço para grandes montagens de palco, a chácara é perfeita para experiências imersivas ao som da música eletrônica e outros eventos especiais.",
-          venueLink: "#recanto-verde",
-          ticketLink: "#tickets-trance"
+          venueLink: "instagram.com/florestasonica  ",
+          ticketLink: "santocartao.com.br/floresta-sonica "
       },
       {
           id: 4,
-          title: "Bass Drop Festival",
-          date: "25 MAI 2025",
-          image: "https://via.placeholder.com/400x480",
-          description: "O Bass Drop Festival é dedicado aos amantes de bass music, drum and bass e dubstep. Com palco principal e uma tenda alternativa, o festival traz artistas nacionais e regionais para uma maratona de graves pesados.",
-          lineup: ["DJ Keoma", "Electra Soul", "Bass Master", "Jungle Beats"],
-          venue: "Galpão das Artes",
-          venueDescription: "O Galpão das Artes é um espaço industrial repaginado para eventos culturais. Com pé direito alto, ótima acústica e sistema de iluminação de ponta, o local é ideal para eventos noturnos de música eletrônica.",
-          venueLink: "#galpao-artes",
-          ticketLink: "#tickets-bass"
+          title: "Abaré Club",
+          date: "26 ABR 2025",
+          image: "img/flyer-abaré.png",
+          description: "O Abaré Clube é um dos destinos mais icônicos de Manaus para quem busca lazer, boa gastronomia e experiências culturais autênticas. Às margens do Rio Tarumã, o clube oferece uma combinação única de natureza exuberante, infraestrutura acolhedora e eventos que valorizam a cultura amazônica. Ideal para famílias, grupos de amigos e turistas que desejam relaxar, curtir boa música e saborear pratos regionais em um ambiente encantador.",
+          lineup: ["El Iwasa", "Adnan Sharif"],
+          venue: "Clube Abaré",
+          venueDescription: "Localizado em meio à natureza, o Abaré Clube conta com amplas áreas abertas, decks sobre o rio, espaço para eventos ao ar livre e restaurante com vista panorâmica. Seu ambiente rústico e ao mesmo tempo aconchegante traz uma experiência única para quem busca conexão com a natureza sem abrir mão do conforto. O espaço é perfeito para confraternizações, aniversários, shows e eventos culturais, sendo um dos pontos mais charmosos da capital amazonense.",
+          venueLink: "https://maps.app.goo.gl/BTdTGzTxgbUiG1wc9",
+          ticketLink: "https://shotgun.live/pt-br/events/eli-iwasa-by-abare-club-rox-club "
       },
       {
           id: 5,
-          title: "Underground Vibes",
-          date: "08 JUN 2025",
-          image: "https://via.placeholder.com/400x480",
-          description: "Underground Vibes celebra a cena alternativa da música eletrônica em Manaus. Focado em estilos como techno minimal, deep house e ambient, o evento acontece em um local secreto revelado apenas 24h antes do início.",
-          lineup: ["Manu Tefé", "DJ Keoma", "Sound System", "Electro Flow"],
-          venue: "Local Secreto",
-          venueDescription: "O local exato do Underground Vibes é mantido em segredo até 24 horas antes do evento, criando um clima de mistério e exclusividade. A cada edição, um espaço diferente da cidade é transformado em um clube temporário com decoração e produção impecáveis.",
-          venueLink: "#local-secreto",
+          title: "Urban Track",
+          date: "03 MAI 2025",
+          image: "img/flyer-urban.png",
+          description: "O Subsolo do Vasco Vasques é um dos espaços mais versáteis e underground de Manaus, ideal para eventos que fogem do convencional. Conhecido por abrigar festas, feiras, exposições e encontros culturais alternativos, o ambiente oferece uma atmosfera urbana e intimista, perfeito para quem busca inovação e autenticidade. Sua localização estratégica, no coração do complexo do Centro de Convenções, facilita o acesso e atrai um público diverso e engajado.",
+          lineup: ["SandeVille", "Vinter", "Nocapz"],
+          venue: "SubSolo Vasco Vasques",
+          venueDescription: "Com uma estrutura ampla e flexível, o subsolo do Vasco Vasques conta com pé-direito alto, espaço modulável e iluminação adaptável, possibilitando diferentes tipos de ambientação. Seu estilo industrial e contemporâneo torna o local ideal para produções criativas, eventos de arte, cultura urbana, raves, festivais e experiências imersivas. O espaço é climatizado, seguro e preparado para receber grandes públicos com conforto e praticidade.",
+          venueLink: "https://www.instagram.com/thisurbantrack",
           ticketLink: "#tickets-underground"
       },
       {
           id: 6,
-          title: "Amazônia Psytrance",
-          date: "22 JUN 2025",
-          image: "https://via.placeholder.com/400x480",
-          description: "O festival Amazônia Psytrance é um encontro de dois dias que celebra a cultura psytrance no coração da floresta. Com três palcos, área de camping, oficinas e alimentação vegetariana, o evento oferece uma experiência completa.",
-          lineup: ["DJ Keoma", "Psy Tribe", "Forest Mind", "Spirit Dance"],
-          venue: "Fazenda Esperança",
-          venueDescription: "A Fazenda Esperança está localizada a 50km de Manaus, em uma área de preservação ambiental. O local conta com lagoa natural, trilhas ecológicas, área de camping e toda a infraestrutura necessária para um festival de dois dias com conforto e segurança.",
+          title: "",
+          date: "03 MAI 2025",
+          image: "img/flyer-unfazed.png",
+          description: "O 502 Room é um dos espaços mais exclusivos e conceituais de Manaus, voltado para experiências noturnas sofisticadas e imersivas. Com uma proposta que une música eletrônica, arte e lifestyle, o local atrai um público seleto que busca vivências autênticas e de alto padrão. Ideal para festas, lançamentos e eventos culturais, o 502 Room se destaca pela curadoria musical refinada e ambiente envolvente.",
+          lineup: ["Pedro Mao"],
+          venue: "502 Room",
+          venueDescription: "Localizado em uma cobertura, o 502 Room oferece uma atmosfera única, com vista privilegiada da cidade, decoração minimalista e iluminação cênica que valoriza a experiência sensorial. O espaço conta com bar premium, sistema de som de alta performance e ambientação moderna, misturando elementos urbanos com toques contemporâneos. É o local perfeito para eventos intimistas, sofisticados e cheios de personalidade.",
           venueLink: "#fazenda-esperanca",
           ticketLink: "#tickets-psytrance"
       }
@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
       hiddenEvents.classList.toggle('show');
       
       if (hiddenEvents.classList.contains('show')) {
-          showMoreBtn.textContent = 'Show Less';
+          showMoreBtn.textContent = 'Mostrar Menos';
       } else {
-          showMoreBtn.textContent = 'Show More';
+          showMoreBtn.textContent = 'Mostrar Mais';
       }
   });
   
@@ -128,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function() {
               
               // Exibir modal
               modalOverlay.classList.add('active');
-              document.body.style.overflow = 'hidden'; // Impedir scroll
           }
       });
   });

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/alien.png" type="image/png">
     <title>Conexão Eletrônica Manaus</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -10,11 +11,27 @@
 <body>
     <!-- Cabeçalho -->
     <header>
+        <!-- Container das fotos de fundo -->
+        <div class="header-photos">
+          <img src="img/beninas.jpg" alt="Foto 1">
+          <img src="img/djs.jpg" alt="Foto 2">
+          <img src="img/galeraconexao.jpg" alt="Foto 3">
+          <img src="img/lule.jpg" alt="Foto 4">
+          <img src="img/paulinho.jpg" alt="Foto 5">
+          <!-- Adicione quantas imagens precisar -->
+        </div>
+      
+        <!-- Conteúdo principal (títulos e subtítulos) -->
         <div class="container header-content">
             <h1>Conexão Eletrônica</h1>
             <p>Unindo os amantes da música eletrônica em Manaus</p>
         </div>
-    </header>
+      
+        <!-- Logo no canto superior direito -->
+        <div class="logo">
+            <img src="img/alien.png" alt="Logo Alien">
+        </div>
+      </header>
 
     <!-- Sobre -->
     <section class="about container">
@@ -80,14 +97,13 @@
         <div class="hidden-events">
             <!-- Evento 4 -->
             <div class="event-card" data-event="4">
-                <img src="https://via.placeholder.com/400x480" alt="Bass Drop Festival" class="event-image">
+                <img src="img/flyer-abaré.png" alt="Abaré Club" class="event-image">
                 <div class="event-info">
-                    <div class="event-date">25 MAI 2025</div>
-                    <h3 class="event-title">Bass Drop Festival</h3>
+                    <div class="event-date">26 ABR 2025</div>
+                    <h3 class="event-title">Abaré Club</h3>
                     <div class="lineup">
-                        <span>DJ Keoma</span>
-                        <span>Electra Soul</span>
-                        <span>Bass Master</span>
+                        <span>El Iwasa</span>
+                        <span>Adnan Sharif</span>
                     </div>
                     <a href="#" class="ticket-btn">Comprar Ingressos</a>
                 </div>
@@ -95,14 +111,14 @@
             
             <!-- Evento 5 -->
             <div class="event-card" data-event="5">
-                <img src="https://via.placeholder.com/400x480" alt="Underground Vibes" class="event-image">
+                <img src="img/flyer-urban.png" alt="Urban Track" class="event-image">
                 <div class="event-info">
-                    <div class="event-date">08 JUN 2025</div>
-                    <h3 class="event-title">Underground Vibes</h3>
+                    <div class="event-date">03 MAI 2025</div>
+                    <h3 class="event-title">Urban Track</h3>
                     <div class="lineup">
-                        <span>Manu Tefé</span>
-                        <span>DJ Keoma</span>
-                        <span>Sound System</span>
+                        <span>SandeVille</span>
+                        <span>Vinter</span>
+                        <span>Nocapz</span>
                     </div>
                     <a href="#" class="ticket-btn">Comprar Ingressos</a>
                 </div>
@@ -110,14 +126,12 @@
             
             <!-- Evento 6 -->
             <div class="event-card" data-event="6">
-                <img src="https://via.placeholder.com/400x480" alt="Amazônia Psytrance" class="event-image">
+                <img src="img/flyer-unfazed.png" alt="Unfazed" class="event-image">
                 <div class="event-info">
-                    <div class="event-date">22 JUN 2025</div>
-                    <h3 class="event-title">Amazônia Psytrance</h3>
+                    <div class="event-date">03 MAI 2025</div>
+                    <h3 class="event-title">Unfazed</h3>
                     <div class="lineup">
-                        <span>DJ Keoma</span>
-                        <span>Psy Tribe</span>
-                        <span>Forest Mind</span>
+                        <span>Pedro Mao</span>
                     </div>
                     <a href="#" class="ticket-btn">Comprar Ingressos</a>
                 </div>
@@ -125,7 +139,7 @@
         </div>
         
         <!-- Botão Show More -->
-        <button class="show-more">Show More</button>
+        <button class="show-more">Mostrar Mais</button>
     </section>
 
     <!-- Redes Sociais -->
@@ -133,11 +147,11 @@
         <div class="container">
             <h2>Conecte-se Conosco</h2>
             <div class="social-buttons">
-                <a href="#" class="social-btn">
+                <a href="https://www.instagram.com/conexaoeletronicamanaus" class="social-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-instagram"></i>
                     Instagram
                 </a>
-                <a href="#" class="social-btn">
+                <a href="https://chat.whatsapp.com/KVGJiGrrMxD1a6BxoUmEws" class="social-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i>
                     WhatsApp
                 </a>

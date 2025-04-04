@@ -20,14 +20,48 @@ body {
 
 /* Cabeçalho */
 header {
-  padding: 40px 0;
+  position: relative;
+  min-height: 360px;
   text-align: center;
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  overflow: hidden;
+  color: white;
 }
 
+/* Container das fotos de fundo */
+.header-photos {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* grid responsivo */
+  grid-auto-rows: 100%; /* garante altura total */
+  z-index: 0;
+}
+
+.header-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* imagem se ajusta sem deformar */
+}
+
+/* Sobreposição escura para contraste do texto */
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Conteúdo principal */
 .header-content {
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -35,6 +69,28 @@ h1 {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: bold;
+  color: #39ff14;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  color: #39ff14;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Logo no canto superior direito */
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
 }
 
 /* Seção Sobre */
@@ -46,7 +102,7 @@ h1 {
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #8e2de2;
+  color: #39ff14;
 }
 
 .about p {
@@ -64,7 +120,7 @@ h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #8e2de2;
+  color: #39ff14;
 }
 
 .events-grid {
@@ -98,7 +154,7 @@ h1 {
 }
 
 .event-date {
-  color: #8e2de2;
+  color: #39ff14;
   font-weight: bold;
   font-size: 1.1rem;
   margin-bottom: 10px;
@@ -117,7 +173,7 @@ h1 {
 
 .lineup span {
   display: inline-block;
-  background-color: rgba(142, 45, 226, 0.2);
+  background-color: rgba(57, 255, 20, 0.2);
   padding: 5px 10px;
   margin: 3px 3px 3px 0;
   border-radius: 15px;
@@ -126,8 +182,8 @@ h1 {
 .ticket-btn {
   display: inline-block;
   padding: 8px 20px;
-  background-color: #8e2de2;
-  color: white;
+  background-color: #39ff14;
+  color: black;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -135,15 +191,16 @@ h1 {
 }
 
 .ticket-btn:hover {
-  background-color: #4a00e0;
+  background-color: white;
+  color: black;
 }
 
 .show-more {
   display: block;
   margin: 40px auto;
   padding: 15px 30px;
-  background-color: #8e2de2;
-  color: white;
+  background-color: #39ff14;
+  color: black;
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -152,7 +209,7 @@ h1 {
 }
 
 .show-more:hover {
-  background-color: #4a00e0;
+  background-color: white;
 }
 
 /* Seção Social */
@@ -165,7 +222,7 @@ h1 {
 .social h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #8e2de2;
+  color: #39ff14;
 }
 
 .social-buttons {
@@ -178,8 +235,8 @@ h1 {
   display: inline-flex;
   align-items: center;
   padding: 12px 25px;
-  background-color: #8e2de2;
-  color: white;
+  background-color: #39ff14;
+  color: black;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -187,7 +244,7 @@ h1 {
 }
 
 .social-btn:hover {
-  background-color: #4a00e0;
+  background-color: white;
 }
 
 .social-btn i {
@@ -280,13 +337,13 @@ footer {
 .modal-title {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #8e2de2;
+  color: #39ff14;
 }
 
 .modal-date {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  color: #4a00e0;
+  color: #39ff14;
   font-weight: bold;
 }
 
@@ -302,7 +359,7 @@ footer {
 
 .modal-lineup h4 {
   margin-bottom: 10px;
-  color: #8e2de2;
+  color: #39ff14;
 }
 
 .modal-lineup-grid {
@@ -317,7 +374,7 @@ footer {
 
 .modal-venue h4 {
   margin-bottom: 10px;
-  color: #8e2de2;
+  color: #39ff14;
 }
 
 .modal-buttons {
@@ -328,8 +385,8 @@ footer {
 
 .modal-btn {
   padding: 10px 20px;
-  background-color: #8e2de2;
-  color: white;
+  background-color: #39ff14;
+  color: black;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -338,44 +395,47 @@ footer {
 }
 
 .modal-btn:hover {
-  background-color: #4a00e0;
+  background-color: white;
+  color: black;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
   h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
-  
-  .about h2, .events h2, .social h2 {
-      font-size: 1.8rem;
+
+  .about h2,
+  .events h2,
+  .social h2 {
+    font-size: 1.8rem;
   }
-  
+
   .events-grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  
+
   .social-buttons {
-      flex-direction: column;
-      gap: 15px;
+    flex-direction: column;
+    gap: 15px;
   }
-  
+
   .modal {
-      flex-direction: column;
-      padding: 20px;
+    flex-direction: column;
+    padding: 20px;
   }
-  
+
   .modal-image {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
-  
+
   .modal-content {
-      width: 100%;
-      padding-left: 0;
+    width: 100%;
+    padding-left: 0;
   }
-  
+
   .modal-buttons {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
