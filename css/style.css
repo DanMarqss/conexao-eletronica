@@ -28,18 +28,22 @@ header {
   position: relative;
   min-height: 360px;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden; /* Mantém qualquer “excesso” oculto */
   color: white;
 }
 
-/* Container das fotos de fundo */
+/* Container das fotos de fundo
+   - Força todas as imagens a ficarem em uma só linha (grid-auto-flow: column)
+   - Se exceder a tela, parte fica oculta (overflow: hidden)
+*/
 .header-photos {
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* grid responsivo */
-  grid-auto-rows: 100%; /* garante altura total */
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   z-index: 0;
+  overflow: hidden; 
 }
 
 .header-photos img {
@@ -411,11 +415,6 @@ footer {
 /* Responsivo para telas menores que 768px */
 @media (max-width: 768px) {
 
-  /* Ajusta a altura mínima do header para não ficar grande demais no celular */
-  header {
-    min-height: auto;
-  }
-
   /* Reduz título e subtítulo no header para caber melhor na tela */
   .header-content h1 {
     font-size: 1.8rem;
@@ -460,19 +459,6 @@ footer {
     flex-direction: column;
   }
 
-  /* Ajuste para header-photos responsivo */
-  .header-photos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-auto-rows: auto;
-  }
-
-  .header-photos img {
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-  }
-
   /*
    * Botões menores e centralizados no celular:
    * Aplica-se a ticket-btn, modal-btn (botão do modal) e social-btn
@@ -483,12 +469,12 @@ footer {
     display: block;
     margin: 0 auto 15px auto; /* centraliza no mobile */
     font-size: 1rem;
-    padding: 10px 15px; /* diminui um pouco o padding */
-    width: auto;        /* se quiser definir um tamanho fixo, pode usar algo como width: 200px */
+    padding: 10px 15px;
+    width: auto;
     text-align: center;
   }
 
-  /* Botão "Mostrar Mais" menor e centralizado também */
+  /* Botão "Mostrar Mais" */
   .show-more {
     font-size: 1rem;
     padding: 10px 15px;
