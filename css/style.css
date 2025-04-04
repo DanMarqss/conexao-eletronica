@@ -56,7 +56,7 @@ header {
   z-index: 1;
 }
 
-/* Conteúdo principal */
+/* Conteúdo principal dentro do header */
 .header-content {
   position: relative;
   z-index: 2;
@@ -408,10 +408,21 @@ footer {
   color: black;
 }
 
-/* Responsivo */
+/* Responsivo para telas menores que 768px */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+
+  /* Ajusta a altura mínima do header para não ficar grande demais no celular */
+  header {
+    min-height: auto;
+  }
+
+  /* Reduz título e subtítulo no header para caber melhor na tela */
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
   }
 
   .about h2,
@@ -429,6 +440,7 @@ footer {
     gap: 15px;
   }
 
+  /* Modal em coluna no celular */
   .modal {
     flex-direction: column;
     padding: 20px;
@@ -459,5 +471,28 @@ footer {
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+  }
+
+  /*
+   * Botões menores e centralizados no celular:
+   * Aplica-se a ticket-btn, modal-btn (botão do modal) e social-btn
+   */
+  .ticket-btn,
+  .modal-btn,
+  .social-btn {
+    display: block;
+    margin: 0 auto 15px auto; /* centraliza no mobile */
+    font-size: 1rem;
+    padding: 10px 15px; /* diminui um pouco o padding */
+    width: auto;        /* se quiser definir um tamanho fixo, pode usar algo como width: 200px */
+    text-align: center;
+  }
+
+  /* Botão "Mostrar Mais" menor e centralizado também */
+  .show-more {
+    font-size: 1rem;
+    padding: 10px 15px;
+    width: auto;
+    margin: 30px auto;
   }
 }
