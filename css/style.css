@@ -438,4 +438,17 @@ footer {
   .modal-buttons {
     flex-direction: column;
   }
+
+  /* Ajuste para header-photos responsivo */
+  .header-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: auto;
+  }
+
+  .header-photos img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
 }
