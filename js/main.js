@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "30 ABR 2025",
             image: "img/flyer-toca.png",
             description: "Toca PVT é uma noite especial, véspera de feriado, que reúne os amantes da música eletrônica em um ambiente sofisticado e exclusivo. Prepare-se para uma experiência única ao som de DJs renomados e muita energia positiva.",
-            lineup: ["DJ Keoma", "Pedro Mao"],
+            lineup: ["DJ Keoma", "Pedro Mao", "Bess Maze", "Gadelha", "Felipe Nascimento", "Eike", "IAN"],
             venue: "Belle Epoque Restaurant & Cocktail Bar",
             venueDescription: "Localizado no coração de Manaus, o Belle Epoque Restaurant & Cocktail Bar oferece uma experiência única, combinando alta gastronomia, drinks exclusivos e música eletrônica de qualidade em um ambiente elegante.",
             venueLink: "https://www.instagram.com/conexaoeletronicamanaus",
