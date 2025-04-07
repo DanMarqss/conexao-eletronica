@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             venue: "Belle Epoque Restaurant & Cocktail Bar",
             venueDescription: "Localizado no coração de Manaus, o Belle Epoque Restaurant & Cocktail Bar oferece uma experiência única, combinando alta gastronomia, drinks exclusivos e música eletrônica de qualidade em um ambiente elegante.",
             venueLink: "https://www.instagram.com/conexaoeletronicamanaus",
-            ticketLink: "#tickets-techno"
+            ticketLink: "https://shotgun.live/pt-br/events/toca-conexaoeletronica?fbclid=PAY2xjawJgtRhleHRuA2FlbQIxMQABp0SO6BgvJhtLSuhHsp11kwz6465VS6kewNiV5SIzlworpnEhZoU_DAv6tP3W_aem_g90P9eVJ3Ika-XRrzxrugQ"
         },
         {
             id: 3,
