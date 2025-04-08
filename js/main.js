@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const eventData = [
         {
             id: 1,
-            title: "Balada 2000",
-            date: "05 ABR 2025",
-            image: "img/flyer-balada-2000.png",
-            description: "Uma noite inesquecível com Alex Gaudino e atrações locais no ROX Club.",
-            lineup: ["Alex Gaudino", "Cesar Dantas", "Felipe Nascimento", "Leo Gomes", "Madame C", "Toxa"],
-            venue: "ROX Club",
-            venueDescription: "O ROX Club é um espaço icônico para festas em Manaus, conhecido por sua atmosfera vibrante e line-up de alta qualidade.",
-            venueLink: "https://maps.app.goo.gl/NshQA1MRZFiLAzPEA",
-            ticketLink: "https://shotgun.live/events/balada-2000-alex-gaudino"
+            title: "New Generation",
+            date: "10 MAI 2025",
+            image: "img/flyer-livexaurora.png",
+            description: "Local será Divulgado em Breve",
+            lineup: ["Em Breve"],
+            venue: "Divulgação do Local em Breve",
+            venueDescription: "Em Breve",
+            venueLink: "https://www.instagram.com/share/BABqQSZPEu",
+            ticketLink: "",
         },
         {
             id: 2,
@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
             lineup: ["All in One", "Trampsta"],
             venue: "Chácara Dama",
             venueDescription: "Chácara Dama é um espaço amplo e versátil em Manaus, ideal para eventos ao ar livre. Cercada por natureza exuberante, oferece uma atmosfera única para festas e festivais. Com estrutura completa, incluindo áreas cobertas, estacionamento e espaço para grandes montagens de palco, a chácara é perfeita para experiências imersivas ao som da música eletrônica e outros eventos especiais.",
-            venueLink: "instagram.com/florestasonica  ",
-            ticketLink: "santocartao.com.br/floresta-sonica "
+            venueLink: "instagram.com/florestasonica",
+            ticketLink: "santocartao.com.br/floresta-sonica"
         },
         {
             id: 4,
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             venue: "Clube Abaré",
             venueDescription: "Localizado em meio à natureza, o Abaré Clube conta com amplas áreas abertas, decks sobre o rio, espaço para eventos ao ar livre e restaurante com vista panorâmica. Seu ambiente rústico e ao mesmo tempo aconchegante traz uma experiência única para quem busca conexão com a natureza sem abrir mão do conforto. O espaço é perfeito para confraternizações, aniversários, shows e eventos culturais, sendo um dos pontos mais charmosos da capital amazonense.",
             venueLink: "https://maps.app.goo.gl/BTdTGzTxgbUiG1wc9",
-            ticketLink: "https://shotgun.live/pt-br/events/eli-iwasa-by-abare-club-rox-club "
+            ticketLink: "https://shotgun.live/pt-br/events/eli-iwasa-by-abare-club-rox-club"
         },
         {
             id: 5,
@@ -92,45 +92,53 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Abrir Modal ao clicar no card do evento
+    // Abrir Modal ao clicar no card ou no botão de comprar ingressos
     document.querySelectorAll('.event-card').forEach(card => {
-        card.addEventListener('click', function(e) {
-            // Ignorar o clique se for no botão de comprar ingressos
-            if (e.target.classList.contains('ticket-btn') || e.target.closest('.ticket-btn')) {
-                return;
-            }
-            
-            const eventId = parseInt(this.getAttribute('data-event'));
+        // Função que abre o modal e popula os dados
+        const openModal = () => {
+            const eventId = parseInt(card.getAttribute('data-event'));
             const event = eventData.find(e => e.id === eventId);
+            if (!event) return;
             
-            if (event) {
-                // Atualizar conteúdo do modal
-                modal.querySelector('.modal-image').src = event.image;
-                modal.querySelector('.modal-image').alt = event.title;
-                modal.querySelector('.modal-title').textContent = event.title;
-                modal.querySelector('.modal-date').textContent = event.date;
-                modal.querySelector('.modal-description').textContent = event.description;
-                
-                // Atualizar lineup
-                const lineupContainer = modal.querySelector('.modal-lineup-grid');
-                lineupContainer.innerHTML = '';
-                event.lineup.forEach(artist => {
-                    const span = document.createElement('span');
-                    span.classList.add('lineup');
-                    span.innerHTML = `<span>${artist}</span>`;
-                    lineupContainer.appendChild(span);
-                });
-                
-                // Atualizar informações do local
-                modal.querySelector('.venue-description').textContent = event.venueDescription;
-                modal.querySelector('.venue-link').href = event.venueLink;
-                modal.querySelector('.ticket-link').href = event.ticketLink;
-                
-                // Exibir modal e bloquear scroll do fundo
-                modalOverlay.classList.add('active');
-                document.body.classList.add('modal-open');
-            }
-        });
+            // Atualiza conteúdo do modal
+            modal.querySelector('.modal-image').src = event.image;
+            modal.querySelector('.modal-image').alt = event.title;
+            modal.querySelector('.modal-title').textContent = event.title;
+            modal.querySelector('.modal-date').textContent = event.date;
+            modal.querySelector('.modal-description').textContent = event.description;
+            
+            // Line-up
+            const lineupContainer = modal.querySelector('.modal-lineup-grid');
+            lineupContainer.innerHTML = '';
+            event.lineup.forEach(artist => {
+                const span = document.createElement('span');
+                span.classList.add('lineup');
+                span.innerHTML = `<span>${artist}</span>`;
+                lineupContainer.appendChild(span);
+            });
+            
+            // Local e ingressos
+            modal.querySelector('.venue-description').textContent = event.venueDescription;
+            modal.querySelector('.venue-link').href = event.venueLink;
+            modal.querySelector('.ticket-link').href = event.ticketLink;
+            
+            // Exibe modal e bloqueia scroll do fundo
+            modalOverlay.classList.add('active');
+            document.body.classList.add('modal-open');
+        };
+
+        // Clique em qualquer parte do card
+        card.addEventListener('click', openModal);
+
+        // Clique no botão de ingressos dentro do card
+        const ticketBtn = card.querySelector('.ticket-btn');
+        if (ticketBtn) {
+            ticketBtn.addEventListener('click', e => {
+                e.preventDefault(),
+                e.stopPropagation(); // não dispara o listener do card duas vezes
+                openModal();
+            });
+        }
     });
     
     // Fechar Modal
@@ -154,5 +162,4 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.remove('modal-open');
         }
     });
-  });
-  
+});
