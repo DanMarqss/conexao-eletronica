@@ -67,11 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "03 MAI 2025",
             image: "img/flyer-unfazed.png",
             description: "O 502 Room é um dos espaços mais exclusivos e conceituais de Manaus, voltado para experiências noturnas sofisticadas e imersivas. Com uma proposta que une música eletrônica, arte e lifestyle, o local atrai um público seleto que busca vivências autênticas e de alto padrão. Ideal para festas, lançamentos e eventos culturais, o 502 Room se destaca pela curadoria musical refinada e ambiente envolvente.",
-            lineup: ["Pedro Mao"],
+            lineup: ["Brahim", "Louris", "Sone", "Lavor", "Eike"],
             venue: "502 Room",
             venueDescription: "Localizado em uma cobertura, o 502 Room oferece uma atmosfera única, com vista privilegiada da cidade, decoração minimalista e iluminação cênica que valoriza a experiência sensorial. O espaço conta com bar premium, sistema de som de alta performance e ambientação moderna, misturando elementos urbanos com toques contemporâneos. É o local perfeito para eventos intimistas, sofisticados e cheios de personalidade.",
             venueLink: "#fazenda-esperanca",
-            ticketLink: "#tickets-psytrance"
+            ticketLink: "https://shotgun.live/pt-br/events/502-room-presents-unfaz"
         }
     ];
     
