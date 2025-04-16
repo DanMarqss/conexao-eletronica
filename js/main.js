@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 3,
             title: "New Generation",
             date: "10 MAI 2025",
-            image: "img/flyer-livexaurora.png",
+            image: "img/flyer-livexaurora.PNG",
             description: "Prepare-se para uma noite inesquecível de música eletrônica no Terraço G9, com DJs que vão fazer o chão tremer no topo do Manaus Plaza!",
             lineup: ["Mila Journee", "Roddy Lima"],
             venue: "Terraço Plaza Shopping",
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 4,
-            title: "Terra",
+            title: "Terra Mágica",
             date: "15 JUN 2025",
             image: "img/flyer-terra.png",
             description: "Prepare-se para uma experiência eletrizante! O Amazonas Dragway vai se transformar numa verdadeira pista de dança sob as estrelas, com NEELIX, Sighter, V-Falabela, Hybrid Machines e Samurai comandando o som. Uma noite de beats intensos, luzes e velocidade — do jeito que a cena pede!",
