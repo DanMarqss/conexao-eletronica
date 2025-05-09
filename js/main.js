@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             venue: "Casa Rayol",
             venueDescription: "A Casa Rayol, situada na Avenida Coronel Teixeira, 9299, no bairro Ponta Negra, é um dos espaços de eventos mais icônicos de Manaus. Com uma localização privilegiada às margens do Rio Negro, oferece uma estrutura versátil que já acolheu desde festivais de música eletrônica, como o Surreal Tour, até eventos culturais tradicionais, como o Festival Norte Bumbás. Sua combinação de ambiente natural e infraestrutura moderna proporciona experiências inesquecíveis para todos os tipos de público.",
             venueLink: "https://www.instagram.com/p/DJFjMAWRfAk/?igsh=NWp3YWlhMXV2bXVt",
-            ticketLink: "",
+            ticketLink: "#casa-rayol",
         },
         {
             id: 2,
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             venue: "Espaço Via Torres",
             venueDescription: "Localizado na Rua Visconde de Porto Seguro, na Zona Norte de Manaus, o Espaço Via Torres é conhecido por sua estrutura ampla, perfeita para grandes eventos e experiências imersivas. Com capacidade para milhares de pessoas e um ambiente versátil, já foi palco de festas icônicas da capital. Agora, recebe a batida da música eletrônica com DJ Brisotti, em uma noite que promete entrar para a história.",
             venueLink: "https://www.instagram.com/rionegroproducoes?igsh=N3o5cGFpMDhwZnVt",
-            ticketLink: ""
+            ticketLink: "#espaço-viatorres"
         },
         {
             id: 3,
@@ -51,27 +51,27 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 5,
-            title: "Urban Track",
-            date: "03 MAI 2025",
-            image: "img/flyer-urban.png",
+            title: "Vintage Culture",
+            date: "18 OUT 2025",
+            image: "img/flyer-vintage.png",
             description: "O Subsolo do Vasco Vasques é um dos espaços mais versáteis e underground de Manaus, ideal para eventos que fogem do convencional. Conhecido por abrigar festas, feiras, exposições e encontros culturais alternativos, o ambiente oferece uma atmosfera urbana e intimista, perfeito para quem busca inovação e autenticidade. Sua localização estratégica, no coração do complexo do Centro de Convenções, facilita o acesso e atrai um público diverso e engajado.",
-            lineup: ["SandeVille", "Vinter", "Nocapz"],
+            lineup: ["Vintage Culture"],
             venue: "SubSolo Vasco Vasques",
             venueDescription: "Com uma estrutura ampla e flexível, o subsolo do Vasco Vasques conta com pé-direito alto, espaço modulável e iluminação adaptável, possibilitando diferentes tipos de ambientação. Seu estilo industrial e contemporâneo torna o local ideal para produções criativas, eventos de arte, cultura urbana, raves, festivais e experiências imersivas. O espaço é climatizado, seguro e preparado para receber grandes públicos com conforto e praticidade.",
-            venueLink: "https://www.instagram.com/thisurbantrack",
-            ticketLink: "#tickets-underground"
+            venueLink: "https://www.instagram.com/aurora_amazonia?igsh=Z3ByYmtxOXc0Z290",
+            ticketLink: "#http://www.vintageamazonia.com.br"
         },
         {
             id: 6,
-            title: "Unfazed",
-            date: "03 MAI 2025",
-            image: "img/flyer-unfazed.png",
-            description: "O 502 Room é um dos espaços mais exclusivos e conceituais de Manaus, voltado para experiências noturnas sofisticadas e imersivas. Com uma proposta que une música eletrônica, arte e lifestyle, o local atrai um público seleto que busca vivências autênticas e de alto padrão. Ideal para festas, lançamentos e eventos culturais, o 502 Room se destaca pela curadoria musical refinada e ambiente envolvente.",
-            lineup: ["Brahim", "Louris", "Sone", "Lavor", "Eike"],
-            venue: "502 Room",
-            venueDescription: "Localizado em uma cobertura, o 502 Room oferece uma atmosfera única, com vista privilegiada da cidade, decoração minimalista e iluminação cênica que valoriza a experiência sensorial. O espaço conta com bar premium, sistema de som de alta performance e ambientação moderna, misturando elementos urbanos com toques contemporâneos. É o local perfeito para eventos intimistas, sofisticados e cheios de personalidade.",
+            title: "E-Sunset",
+            date: "17 MAI 2025",
+            image: "img/flyer_esunset-maior.png",
+            description: "Chega de barco, entra no clima e deixa o som te levar. A festa vai rolar no Abare, o flutuante mais vibes de Manaus. Música eletrônica, drinks, rio e pôr do sol. É pra dançar até o fim com a Amazônia como cenário.",
+            lineup: ["Pricila Dias"],
+            venue: "Clube Abaré",
+            venueDescription: "Flutuante localizado no Rio Tarumã-Açu, acessível por barco. Estrutura única sobre as águas com bar, restaurante e espaço para festas. Visual incrível da natureza amazônica, somado a uma vibe rústica e sofisticada.",
             venueLink: "#fazenda-esperanca",
-            ticketLink: "https://shotgun.live/pt-br/events/502-room-presents-unfaz"
+            ticketLink: "#tickets"
         }
     ];
     
